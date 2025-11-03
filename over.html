@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Antarctica</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class="logo">
+                <img src="./media/pexels-pixabay-52512.jpg" alt="Een jonge pingu&iuml;n zit bij zijn ouder tussen de benen.">
+                <p>Antarctica</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Antarctica</a></li>
+                    <li><a href="./onderzoek.html">Onderzoek</a></li>
+                    <li><a href="./reizen.html">Reizen</a></li>
+                    <li><label for="menu-toggle" class="praktisch">Praktisch</label>
+                    <input type="checkbox" id="menu-toggle">
+                    <ul class="submenu">
+                        <li class="selected"><a href="./over.html">Over</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="headerfoto">
+            <button onclick="setDarkMode()" id="button-donker">Donker</button>
+            <button onclick="setLightMode()" id="button-licht">Licht</button>
+        </div>
+
+        <main class="over">
+            <h1>Over</h1>
+            <p class="overtekst">
+                Wist je dat de laagste temperatuur ooit gemeten op aarde -93,2 graden Celsius is?<br><br>
+                Deze temperatuur werd gemeten op 10 augustus 2010 op het Antarctisch plateau op Antarctica.
+                 Het Antarctisch plateau is daarmee de koudste plek op Aarde.<br><br>
+                Op 21 juli 1983 werd in een Russisch weerstation genaamd Vosstok op de Zuid Pool -89,2 graden 
+                Celsius gemeten. Deze temperatuur hield lang stand als de laagste temperatuur ooit gemeten op 
+                Aarde.<br><br>
+                De laagste temperatuur die in Nederland ooit werd gemeten is -27,4 graden Celsius. Deze 
+                temperatuur werd in 1942 in Winterswijk bereikt.<br><br>
+                Rekenen we de atmosfeer mee, dan is de laagst ooit gemeten temperatuur -143 graden Celsius. 
+                Gemeten in 1963.
+                (<a href="https://web.archive.org/web/20140222064329/http://www.digiden.nl/nl/wist-je-dat/het-weer/735-de-laagste-temperatuur-ooit-gemeten-op-aarde" 
+                target="_blank">bron</a>)
+            </p>
+            <aside>Wist je dat de laagste temperatuur ooit gemeten op aarde -93,2 graden Celsius is?</aside>
+        </main>
+
+        <footer>
+            <p>Het koudste continent op aarde.</p>
+            <p>82.8628&deg;S 135&deg;E</p>
+        </footer>
+    </body>
+</html>

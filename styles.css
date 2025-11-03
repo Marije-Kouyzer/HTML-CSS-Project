@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Nanum+Pen+Script&family=Titillium+Web&display=swap');
+
+/*------------------algemeen------------------*/
+:root {
+    --background-color: hsl(201, 70%, 99%);
+    --main-color: hsl(201, 100%, 75%);
+    --text-color: hsl(201, 80%, 2%);
+    --accent-color: hsla(201, 50%, 93%, 0.5);
+    --header-font: 'Titillium Web', sans-serif;
+    --main-font: 'Cormorant', serif;
+    --aside-font: 'Nanum Pen Script', cursive;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--main-font);
+}
+
+h1, h3 {
+    margin-block: 0;
+    font-family: var(--header-font);
+}
+
+a:any-link {
+    color: var(--main-color);
+}
+
+/*------------------header------------------*/
+
+header {
+    background-image: linear-gradient(var(--main-color), var(--background-color));
+    border-block-end: 2px solid var(--text-color);
+    position: relative;
+    color: var(--text-color);
+}
+
+header img {
+    display: block;
+    height: 60px;
+}
+
+header p {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: var(--text-color);
+    text-shadow: 1px 1px 8px var(--background-color), -1px -1px 8px var(--background-color), -1px 1px 8px var(--background-color), 1px -1px 8px var(--background-color);
+    font-family: var(--aside-font);
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+    margin: 0px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:any-link {
+    color: var(--text-color);
+}
+
+nav li {
+    padding: 20px;
+    transition: background-color 500ms ease-in, box-shadow 500ms ease-in;
+    text-align: center;
+}
+
+nav li:hover, nav li.selected {
+    background-color: var(--accent-color);
+}
+
+.praktisch {
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+input + ul {
+    visibility: hidden;
+}
+
+input:checked + ul {
+    visibility: visible;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    text-align: center;
+    top: 325px;
+    width: 100%;
+}
+
+.headerfoto {
+    width: 100%;
+    height: 300px;
+    background-image: url("./media/pexels-riccardo-300857.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    border-block-end: 2px solid var(--text-color);
+}
+
+/*------------------main------------------*/
+main {
+    width: 95%;
+    margin: auto;
+}
+
+/*------------------hoofdpagina------------------*/
+.fotovideocontainer {
+    border-block: 2px solid var(--text-color);
+    padding: 10px;
+}
+
+.fotovideo {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+}
+
+figure img {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/*------------------onderzoek-pagina------------------*/
+table {
+    table-layout: fixed;
+    width: max(80%, 400px);
+    text-align: center;
+}
+
+thead th {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.onderzoekfoto {
+    width: 60%;
+    margin-block: 20px;
+}
+
+/*------------------reizen-pagina------------------*/
+.reizenfoto {
+    height: 30vw;
+    float: left;
+    margin-block: 20px;
+    margin-inline-end: 50px;
+}
+
+/*------------------over-pagina------------------*/
+.over {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.over h1 {
+    grid-column: 1 / span 3;
+}
+
+.overtekst {
+    grid-column: 1 / span 2;
+}
+
+aside {
+    font-family: var(--aside-font);
+    font-size: 2.2rem;
+    grid-column: 3 / span 1;
+}
+
+/*------------------contact-pagina------------------*/
+input[type="submit"] {
+    background-color: var(--accent-color);
+    font-family: var(--main-font);
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    margin-block-end: 10px;
+}
+
+/*------------------footer------------------*/
+footer {
+    border-block-start: 2px solid var(--text-color);
+    height: 50px;
+    text-align: right;
+    padding-inline-end: 15px;
+}
+
+/*------------------responsiviteit------------------*/
+@media screen and (max-width: 768px) {
+    .fotovideo {
+        margin-block: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /*-------------header-------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        align-self: center;
+    }
+
+    nav li {
+        width: 100px;
+    }
+
+    nav > ul > li {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15%;
+    }
+
+    nav ul {
+        display: flex;
+        margin-inline-end: 10px;
+    }
+
+    nav > ul > li:hover {
+        box-shadow: 0px 0px 8px var(--text-color);
+    }
+
+    .submenu {
+        top: 60px;
+        right: 0;
+        width: auto;
+    }
+
+    /*-------------main-------------*/
+    main {
+        width: 90%;
+    }
+
+    .fotovideo {
+        height: 12vw;
+    }
+
+    .contentcontainer {
+        display: flex;
+        gap: 2em;
+    }
+
+    .content {
+        flex: 1 1 100px;
+    }
+
+    .fotovideocontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    .fotovideo {
+        height: 20vw;
+    }
+
+    #fotovideotitel {
+        grid-column: 1 / span 6;
+    }
+
+    .een {
+        grid-column: 1 / span 2;
+    }
+
+    .twee {
+        grid-column: 3 / span 2;
+    }
+
+    .drie {
+        grid-column: 5 / span 2;
+    }
+
+    .vier {
+        grid-column: 1 / span 3;
+        height: 30vw;
+    }
+
+    .vijf {
+        grid-column: 4 / span 3;
+        height: 30vw;
+    }
+
+    .plaatjecontainer figure {
+        clear: both;
+    }
+
+    figure img {
+        width: 50%;
+        height: 30vw;
+        float: left;
+        margin: 15px;
+    }
+
+    .right {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .fotovideocontainer {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .fotovideo {
+        height: 12vw;
+    }
+
+    #fotovideotitel {
+        grid-column: 1 / span 5;
+    }
+
+    .een {
+        grid-column: 1 / span 1;
+    }
+
+        .twee {
+        grid-column: 2 / span 1;
+    }
+
+    .drie {
+        grid-column: 3 / span 1;
+    }
+
+    .vier {
+        grid-column: 4 / span 1;
+    }
+
+    .vijf {
+        grid-column: 5 / span 1;
+    }
+
+    .plaatjecontainer {
+        display: flex;
+    }
+
+    figure img {
+        height: 15vw;
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .plaatjecontainer figure {
+        flex: 1 1 100px;
+        clear: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        width: min(90%, 1296px);
+    }
+}

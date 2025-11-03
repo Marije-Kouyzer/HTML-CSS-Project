@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Antarctica</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class="logo">
+                <img src="./media/pexels-pixabay-52512.jpg" alt="Een jonge pingu&iuml;n zit bij zijn ouder tussen de benen.">
+                <p>Antarctica</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Antarctica</a></li>
+                    <li><a href="./onderzoek.html">Onderzoek</a></li>
+                    <li class="selected"><a href="./reizen.html">Reizen</a></li>
+                    <li><label for="menu-toggle" class="praktisch">Praktisch</label>
+                    <input type="checkbox" id="menu-toggle">
+                    <ul class="submenu">
+                        <li><a href="./over.html">Over</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="headerfoto">
+            <button onclick="setDarkMode()" id="button-donker">Donker</button>
+            <button onclick="setLightMode()" id="button-licht">Licht</button>
+        </div>
+
+        <main>
+            <img src="./media/pexels-christian-pfeifer-5334316.jpg" class="reizenfoto" alt="Een cruiseboot bij Antarctica omringd door ijs.">
+            <article class="reizen">
+                <h1>Reizen</h1>
+                <p>Je kunt een reis boeken naar Antarctica via een van de volgende websites: </p>
+                <ul>
+                    <li><a href="https://www.cruisetravel.nl/vaargebieden/antarctica/">CruiseTravel</a></li>
+                    <li><a href="https://oceanwide-expeditions.com/antarctica">Oceanwide Expeditions</a></li>
+                    <li><a href="https://www.hurtigruten.com/en-gb/expeditions/destinations/antarctica-cruises/">Hurtigruten Expeditions</a></li>
+                </ul>
+            </article>
+        </main>
+
+        <footer>
+            <p>Het koudste continent op aarde.</p>
+            <p>82.8628&deg;S 135&deg;E</p>
+        </footer>
+    </body>
+</html>

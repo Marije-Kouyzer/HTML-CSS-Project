@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Antarctica</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class="logo">
+                <img src="./media/pexels-pixabay-52512.jpg" alt="Een jonge pingu&iuml;n zit bij zijn ouder tussen de benen.">
+                <p>Antarctica</p>
+            </a>
+            <nav>
+                <ul>
+                    <li class="selected"><a href="./index.html">Antarctica</a></li>
+                    <li><a href="./onderzoek.html">Onderzoek</a></li>
+                    <li><a href="./reizen.html">Reizen</a></li>
+                    <li><label for="menu-toggle" class="praktisch">Praktisch</label>
+                    <input type="checkbox" id="menu-toggle">
+                    <ul class="submenu">
+                        <li><a href="./over.html">Over</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="headerfoto">
+            <button onclick="setDarkMode()" id="button-donker">Donker</button>
+            <button onclick="setLightMode()" id="button-licht">Licht</button>
+        </div>
+        
+        <main>
+            <div class="contentcontainer">
+                <div class="content">
+                    <h1>De zuidpool</h1>
+                    <p>De zuidpool, ook wel Antarctica genoemd, is het zuidelijkste continent op aarde. Het is het enige continent waar geen mensen permanent wonen. 
+                        De enige mensen zijn <a href="./onderzoek.html">onderzoekers</a> die er soms wel maanden achter elkaar verblijven.</p>
+                </div>
+                <div class="content">
+                    <h1>Fauna</h1>
+                    <p>Antarctica is de natuurlijke omgeving van de pingu&iuml;ns. Je zult hier geen ijsberen vinden, maar wel veel andere dieren, zoals walvissen en 
+                        zeehonden.</p>
+                </div>
+            </div>
+            <div class="fotovideocontainer">
+                <h3 id="fotovideotitel">Foto's en video's</h3>
+                <img src="./media/pexels-vladimir-blyufer-4147992.jpg" class="fotovideo een" alt="Een pingu&iuml;n kijkt naar rechts.">
+                <video src="./media/pexels-mikhail-nilov-8318616-2560x1440-25fps.mp4" class="fotovideo twee" controls></video>
+                <img src="./media/pexels-mikhail-nilov-8318257.jpg" class="fotovideo drie" alt="Een ijsberg in de zee.">
+                <img src="./media/pexels-pixabay-209096.jpg" class="fotovideo vier" alt="Vijf pingu&iuml;ns onderweg naar zee.">
+                <img src="./media/pexels-noel-mcshane-1036155.jpg" class="fotovideo vijf" alt="Een groep pingu&iuml;ns op een rots.">
+            </div>
+            <div class="plaatjecontainer">
+                <figure>
+                <img src="./media/pexels-jeanchristophe-andré-2574997.jpg" alt="Een ijsberg steekt uit boven het water.">
+                <figcaption>
+                    <h3>Ijsbergen</h3>
+                    <p>Een ijsberg is een drijvende ijsmassa afkomstig van een gletsjer of een ijskap.
+
+                        Binnen de poolcirkels is, door het poolklimaat, een groot aantal gletsjers te vinden die tot aan de zee reiken. Zo'n gletsjer schuift heel 
+                        langzaam op naar beneden. Wanneer een gletsjer de zee bereikt, breken er grote brokken ijs af die vervolgens wegdrijven. Deze ijsbergen 
+                        worden via de zeestroom naar warmere streken vervoerd en kunnen een afstand van meer dan 2950 kilometer (1600 zeemijlen) afleggen alvorens 
+                        ze geheel gesmolten zijn. (<a href="https://nl.wikipedia.org/wiki/IJsberg">bron</a>)</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./media/pexels-jean-van-der-meulen-2078467.jpg" class="right" alt="Een pingu&iuml;n van dichtbij.">
+                <figcaption>
+                    <h3>Pingu&iuml;ns</h3>
+                    <p>Pingu&iuml;ns of vetganzen zijn een orde van niet-vliegende zeevogels die alleen voorkomen op het zuidelijk halfrond. De pingu&iuml;ns 
+                        behoren tot de orde Sphenisciformes, klasse Aves (vogels). Alle moderne pingu&iuml;ns behoren tot de familie van de Spheniscidae, maar er 
+                        zijn uitgestorven soorten die buiten deze kroongroep vallen. (<a href="https://nl.wikipedia.org/wiki/Pingu%C3%AFns">bron</a>)</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./media/pexels-koen-swiers-6270193.jpg" alt="Verschillende stukken ijs en sneeuw en water.">
+                <figcaption>
+                    <h3>Temperatuur</h3>
+                    <p>Antarctica is het koudste continent op aarde. Het binnenland heeft een lange en koude winter waarbij het gemiddeld -40 tot -60 &deg;C is. 
+                        In de korte zomer wordt het daar gemiddeld niet warmer dan -20 &deg;C. Aan de kust en op het Antarctisch Schiereiland is het minder koud. 
+                        In de winter is het daar gemiddeld -10 tot -30 &deg;C, afhankelijk van de locatie, terwijl in de zomer de temperatuur gemiddeld iets onder 
+                        tot rond het vriespunt ligt. (<a href="https://nl.wikipedia.org/wiki/Antarctica#Klimaat">bron</a>)</p>
+                </figcaption>
+            </figure>
+            </div>
+        </main>
+
+        <footer>
+            <p>Het koudste continent op aarde.</p>
+            <p>82.8628&deg;S 135&deg;E</p>
+        </footer>
+    </body>
+</html>

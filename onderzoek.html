@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Antarctica</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class="logo">
+                <img src="./media/pexels-pixabay-52512.jpg" alt="Een jonge pingu&iuml;n zit bij zijn ouder tussen de benen.">
+                <p>Antarctica</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Antarctica</a></li>
+                    <li class="selected"><a href="./onderzoek.html">Onderzoek</a></li>
+                    <li><a href="./reizen.html">Reizen</a></li>
+                    <li><label for="menu-toggle" class="praktisch">Praktisch</label>
+                    <input type="checkbox" id="menu-toggle">
+                    <ul class="submenu">
+                        <li><a href="./over.html">Over</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="headerfoto">
+            <button onclick="setDarkMode()" id="button-donker">Donker</button>
+            <button onclick="setLightMode()" id="button-licht">Licht</button>
+        </div>
+        <main>
+            <h1>Onderzoek</h1>
+            <table>
+                <caption><a href="https://nl.wikipedia.org/wiki/Lijst_van_onderzoeksstations_op_Antarctica" target="_blank">bron</a></caption>
+                <thead>
+                    <tr>
+                        <th>Onderzoeksgroep</th>
+                        <th>Vanaf</th>
+                        <th>Onderzoeksbasis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Finnish Antarctic Research Program</td>
+                        <td>1988</td>
+                        <td>Aboa</td>
+                    </tr>
+                    <tr>
+                        <td>British Antarctic Survey</td>
+                        <td>1956</td>
+                        <td>Halley Research Station</td>
+                    </tr>
+                    <tr>
+                        <td>National Institute of Polar Research</td>
+                        <td>1958</td>
+                        <td>Showa Station</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="./media/pexels-lara-jameson-8828641.jpg" class="onderzoekfoto" alt="Een wereldbol gezien van onder, gefocust op Antarctica.">
+        </main>
+
+        <footer>
+            <p>Het koudste continent op aarde.</p>
+            <p>82.8628&deg;S 135&deg;E</p>
+        </footer>
+    </body>
+</html>
